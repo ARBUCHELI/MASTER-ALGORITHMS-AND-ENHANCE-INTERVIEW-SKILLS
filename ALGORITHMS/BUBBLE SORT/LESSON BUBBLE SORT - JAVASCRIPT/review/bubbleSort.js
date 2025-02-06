@@ -10,6 +10,7 @@ const bubbleSort = input => {
       if (input[i] > input[i + 1]) {
         swap(input, i, i + 1);
         swapCount++;
+        console.log(swapCount);
         swapping = true;
       }
     }
@@ -20,8 +21,8 @@ const bubbleSort = input => {
 
 module.exports = bubbleSort;
 
-const result1 = bubbleSort([9, 8, 7, 6, 5, 4, 3, 2, 1]);
+const result1 = bubbleSort([4, 3, 2, 1]);
 console.log(result1);
 
-const result2 = bubbleSort([1, 2, 3, 4, 5, 6, 7, 8, 9]);
-console.log(result2);
+/*const result2 = bubbleSort([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+console.log(result2);*/
